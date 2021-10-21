@@ -53,7 +53,75 @@ Today I'm talking about ...
 layout: section
 ---
 
-<img src="/images/logo-drupalpod.png" class="m-auto block h-100" />
+<div class="grid grid-cols-[1fr,1fr]">
+  <img src="/images/logo-gitpod.svg" class="m-auto block h-20" />
+  <img src="/images/logo-drupalpod.png" class="m-auto block h-90" />
+</div>
+
+<!--
+Gitpod & DrupalPod
+-->
+
+---
+layout: section
+---
+
+# Gitpod
+
+https://gitpod.io
+
+<!--
+First up: Gitpod
+
+Gitpod is a development environment in the cloud.
+
+It's Visual Studio Code in a browser.  
+It allows for colaborative development.  
+It's pretty awesome.  
+-->
+
+---
+layout: section
+---
+
+# Getting started with Gitpod
+
+<div class="text-left">
+
+## Getting started
+
+1. Add `gitpod.io#` in front of any GitHub repository.  
+   - Signup for a free account as required
+
+2. (Optional) Add `.gitpod.yml` config: [gitpod.io/docs/configure](https://www.gitpod.io/docs/configure)  
+
+    ```
+    image:
+      file: Dockerfile
+
+    tasks:
+      - before: git pull -f origin main:main
+        init: composer install
+        command: cat WELCOME.md
+    ```
+
+3. (Optional) Enable prebuilds: [gitpod.io/docs/prebuilds](https://www.gitpod.io/docs/prebuilds)  
+
+</div>
+
+<!--
+Gitpod is super simply to start using.
+
+- At the minimum you need a free account.  
+- Config allows you to add tasks to setup the environment as required.  
+- Prebuilds ensure that time consuming build tasks are done before you need to use the environment.  
+-->
+
+---
+layout: section
+---
+
+# Demo
 
 ---
 layout: section
